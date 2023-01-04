@@ -2,7 +2,9 @@ var c,
   f = document.createElement("img");
 function h() {
   var b = Array.from(
-    document.querySelectorAll(".gv_root .navItemBadge.ng-star-inserted")
+    document.querySelectorAll(
+      ".gv_root .mat-drawer-content.mat-sidenav-content .navItemBadge.ng-star-inserted"
+    )
   )
     .map(function (a) {
       return isNaN(a.innerHTML.trim()) ? 100 : Number(a.innerHTML.trim());
